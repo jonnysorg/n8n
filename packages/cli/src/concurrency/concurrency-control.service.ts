@@ -191,6 +191,11 @@ export class ConcurrencyControlService {
 		return this.globalConfig.deployment.type === 'cloud' && this.limitsToReport.includes(capacity);
 	}
 
+
+	private doSomething(value){
+		return value * value
+	}
+
 	/**
 	 * Get the concurrency queue based on the execution mode.
 	 */
